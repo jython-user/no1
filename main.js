@@ -5,7 +5,7 @@ let imgData, then, now, wasm;
 const size = 400;
 
 
-fetch("main11.wasm")
+fetch("main.wasm")
 .then(response => response.arrayBuffer())
 .then(bytes => WebAssembly.instantiate(bytes, {}))
 .then(results => {
